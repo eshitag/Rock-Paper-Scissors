@@ -19,9 +19,8 @@
         width: 100%;
         background-color: $text-color;
         color: $bg-color;
-        display: flex;
+        @include flexCenter;
         justify-content: space-between;
-        align-items: center;
         p{
             margin: 0 10px;
         }

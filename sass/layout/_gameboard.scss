@@ -27,7 +27,7 @@
             font-size: 5rem;
             animation: fadeInFromNone 1s ease-in;
             @include mq(768px){
-                font-size: 6 rem;
+                font-size: 6rem;
             }
         }
         .fadeOut{
@@ -35,14 +35,14 @@
             animation: fadeOut 1s ease-in-out;
         }
     }
-    .selected {
+    selected {
         margin : 0 auto;
-        transition: margin 0.5sec linear;
+        transition: margin 0.5s linear;
 
     }
     .not-selected {
         visibility: hidden;
         width: 0;
-        transition: width 05.s linear, visibility 0.5s linear;
+        transition: width 0.5s linear, visibility 0.5s linear;
     }
 }

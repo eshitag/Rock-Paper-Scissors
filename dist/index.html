@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.min.css"
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/main.js" type="module"></script>
 </head>
 <body>
     <main>
@@ -40,10 +41,10 @@
                     <p><abbr title="Computer Player">CP</abbr></p>
                 </div>
                 <div class="scoreboard__row" role="role">
-                    <div id="p1_session_time_score" class="scoreboard__score center" role="cell" aria-label="Player One Wins This Session" tabindex="0">
+                    <div id="p1_session_score" class="scoreboard__score center" role="cell" aria-label="Player One Wins This Session" tabindex="0">
                         0
                     </div>
-                    <div id="cp_session_time_score" class="scoreboard__score center" role="cell" aria-label="Computer Player Wins This Session" tabindex="0">
+                    <div id="cp_session_score" class="scoreboard__score center" role="cell" aria-label="Computer Player Wins This Session" tabindex="0">
                         0
                     </div>
                 </div>
@@ -65,7 +66,7 @@
             </div>
         </section>
         <section id="computerboard" class="computerboard">
-            <h2 id="cpmsg" class="center" aria-label="Computer chooses" tabindex="0"> Player One Chooses...</h2>
+            <h2 id="cpmsg" class="center" aria-label="Computer chooses" tabindex="0"> Computer Chooses...</h2>
             <div id="cp_gameboard" class="gameboard">
                 <div id="cp_rock" class="gameboard__square">
                     <img src="img/rock.png" alt="rock" tabindex="0">
@@ -80,7 +81,7 @@
         </section>
     </main>
     <form>
-        <button id="playagain" type="submit" class="playagain">Play Again</button>
+        <button id="playAgain" type="submit" class="playAgain" hidden>Play Again</button>
     </form>
 </body>
 </html>
