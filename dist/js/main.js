@@ -191,7 +191,7 @@ const displayActionMessage = (actionMessage) => {
   cpmsg.textContent = actionMessage;
 };
 
-const updateAriaResult = (result) => {
+const updateAriaResult = (result, winner) => {
   const ariaResult = document.getElementById("playAgain");
   const winMessage =
     winner === "player"
@@ -215,7 +215,7 @@ const updatePersistentData = (winner) => {
   localStorage.setItem(store, score);
 };
 
-const updateWinnerMessage = () => {
+const updateWinnerMessage = (winner) => {
   if (winner === "tie") return;
   const message =
     winner === "computer" ? "🤖 Computer Wins! 🤖" : "🏆🔥You Win🔥🏆";
